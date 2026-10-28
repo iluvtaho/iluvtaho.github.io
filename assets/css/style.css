@@ -1,0 +1,37 @@
+
+:root{--bg:#F4F6F8;--card:#fff;--ink:#1B2430;--mut:#566170;--ac:#B34E08;--line:#D5DBE2}
+@media(prefers-color-scheme:dark){:root{--bg:#141B24;--card:#1B2430;--ink:#E8EDF2;--mut:#A3AFBC;--ac:#F29A4B;--line:#2E3A48}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+h1,h2,h3,.brand,.rows strong{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+h1{font-size:clamp(2.2rem,7vw,3.6rem);margin:0 0 .75rem}
+h2{font-size:clamp(1.3rem,3.5vw,1.7rem);margin:2.2rem 0 .5rem}
+a{color:var(--ac)}
+a:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+img{max-width:100%;height:auto}
+.top{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;padding:1rem clamp(1rem,5vw,3rem);border-bottom:1px solid var(--line)}
+.brand{font-size:1.25rem;font-weight:700;color:var(--ink);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:1.25rem}
+nav a{color:var(--ink);text-decoration:none;padding:.2rem 0;border-bottom:2px solid transparent}
+nav a[aria-current]{border-color:var(--ac)}
+main,footer{max-width:60rem;margin:0 auto;padding:2rem clamp(1rem,5vw,3rem)}
+footer{color:var(--mut)}
+p,li{max-width:70ch}
+.lead{font-size:1.25rem;color:var(--mut);max-width:40ch}
+.rows{margin-top:2.5rem}
+.rows a{display:block;padding:1.2rem 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
+.rows strong{display:block;font-size:1.6rem}
+.rows span{color:var(--mut)}
+.rows a:hover strong{color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem;margin:1.5rem 0}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:1.25rem;color:var(--ink);text-decoration:none}
+a.card:hover{border-color:var(--ac)}
+.card h3{margin:0 0 .4rem}
+.card p{margin:0 0 .5rem;color:var(--mut)}
+.card small{color:var(--mut)}
+.wip{display:inline-block;font-size:.85rem;font-weight:700;color:#fff;background:#B34E08;border-radius:1rem;padding:.1rem .7rem;margin-bottom:.5rem}
+.spec{display:grid;grid-template-columns:max-content 1fr;gap:.35rem 1.5rem;margin:1.5rem 0;padding:1rem 1.25rem;border:1px solid var(--line);border-radius:.5rem;background:var(--card)}
+.spec dt{color:var(--mut)}
+.spec dd{margin:0;font-weight:600}
+.ph{display:grid;place-items:center;min-height:12rem;margin:1.5rem 0;padding:1rem;border:2px dashed var(--line);border-radius:.5rem;color:var(--mut);text-align:center}
+.date{color:var(--mut)}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why my minesweeper robot kept failing | Jared Caldo</title><meta name="description" content="How battery internal resistance and stall current broke my robot, and what fixed it."><link rel="stylesheet" href="/assets/css/style.css"></head>
+<body><header class="top"><a class="brand" href="/">Jared Caldo</a><nav><a href="/">Home</a><a href="/about/">About</a><a href="/portfolio/">Portfolio</a><a href="/blog/" aria-current="page">Blog</a></nav></header>
+<main>
+<h1>Why my minesweeper robot kept failing</h1><p class="date">October 27, 2026</p>
+<p>While building my Mine Sweeper Robot, most of my problems were not about the search algorithm. They were about power.</p>
+<h2>The symptoms</h2><p>I powered the robot with AA batteries. When the motors started or stalled, they pulled a sudden spike of current, called stall current. AA batteries have high internal resistance, so the voltage sagged under that load and the robot behaved unreliably.</p>
+<h2>Trying to fix it in code</h2><p>I tried to solve the problem purely in software first. It helped less than I hoped, because the cause was electrical, not logical.</p>
+<h2>The fix</h2><p>I bought 18650 Li-ion batteries, which handle current spikes much better. That simple hardware change did more than my code changes.</p>
+<h2>What I took from it</h2><p>Over five documented trials, I learned to find the root cause of each failure before changing anything. Sometimes the simplest fix is the right one.</p>
+<p><a href="/portfolio/mine-sweeper-robot/">See the full project</a> or <a href="/blog/">read more posts</a>.</p></main>
+<footer><p>© 2026 Jared Caldo. <a href="https://github.com/iluvtaho">GitHub</a> and <a href="https://www.linkedin.com/in/jared-caldo-1086653a9">LinkedIn</a></p></footer></body></html>
